@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>BookID</th>
+        <th>Book Name</th>
+        <th>Author</th>
+        <th>price</th>
+        <th>publisher</th>
+    </tr>
+        <% for(var i=0;i<data.length;i++){ %>
+
+        <tr>
+            <td><%=data[i].bookid %></td>
+            <td><%=data[i].bookname %></td>
+            <td><%=data[i].author %></td>
+            <td><%=data[i].price %></td>
+            <td><%=data[i].publisher %></td>
+        </tr><% } %>
+    </table>
+</body>
+</html>

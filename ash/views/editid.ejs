@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <table>
+            Book Id: <%=data[0].bookid%>
+            <br>
+            <form action="/books/editadd" method="post">
+                <input type = "hidden" name = "bid" value=<%=data[0].bookid%> >
+                <br>
+                Book Name: <input type = "text" name = "book_name" value=<%=data[0].bookname%> >
+                <br>
+                Author: <input type = "text" name = "Author" value=<%=data[0].author%> >
+                <br>
+                Price: <input type = "text" name = "Price" value=<%=data[0].price%> >
+                <br>
+                Publisher: <input type = "text" name = "Publisher" value=<%=data[0].publisher%> >
+                <br>
+                <button type="submit" value="submit">Edit Book</button>
+            </form>
+    </table>
+</body>
+</html>
